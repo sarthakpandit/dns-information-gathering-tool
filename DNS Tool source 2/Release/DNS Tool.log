@@ -1,0 +1,38 @@
+﻿Build started 14.05.2012 10:22:27.
+     1>Project "C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\DNS Tool.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\DNS Tool.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /l"0x0409" /IRelease\ /nologo /fo"Release\DNS Tool.res" "DNS Tool.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\Release\DNS Tool.exe" /INCREMENTAL:NO /NOLOGO dnsapi.lib libcurlSSL.lib ws2_32.lib winmm.lib wldap32.lib libeay32MT.lib ssleay32MT.lib /MANIFEST /ManifestFile:"Release\DNS Tool.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\Release\DNS Tool.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\Release\DNS Tool.lib" /MACHINE:X86 "Release\DNS Tool.res"
+         Release\ArecsDlg.obj
+         Release\Conf.obj
+         Release\curl_tools.obj
+         Release\DlgMX.obj
+         Release\DlgNS.obj
+         Release\DlgReport.obj
+         Release\DlgTLD.obj
+         Release\DlgWeb.obj
+         "Release\DNS Tool.obj"
+         "Release\DNS ToolDlg.obj"
+         Release\Serial.obj
+         Release\Shared.obj
+         Release\stdafx.obj
+         Generating code
+     1>c:\users\875144\desktop\development\17_dns_ig\dns tool source 2\dns tooldlg.cpp(216): warning C4700: uninitialized local variable 'ble2' used
+         Finished generating code
+         DNS Tool.vcxproj -> C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\Release\DNS Tool.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\Release\DNS Tool.exe;#1" /manifest "Release\DNS Tool.exe.intermediate.manifest" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\DNS Tool.unsuccessfulbuild".
+         Touching "Release\DNS Tool.lastbuildstate".
+     1>Done Building Project "C:\Users\875144\Desktop\Development\17_DNS_IG\DNS Tool source 2\DNS Tool.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.81

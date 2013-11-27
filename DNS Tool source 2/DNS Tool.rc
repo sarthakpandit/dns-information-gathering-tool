@@ -1,0 +1,593 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish (Poland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DNSTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DNS Tool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+#endif    // Polish (Poland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DNS Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,36,80,18,18
+    LTEXT           "DNS Tool, Version 1.0",IDC_STATIC,42,12,114,8,SS_NOPREFIX
+    LTEXT           "Krzysztof Kucza \n Oliver Muenchow",IDC_STATIC,42,23,114,18
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,7,40,61,15
+END
+
+IDD_DNSTOOL_DIALOG DIALOGEX 0, 0, 361, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DNS Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,98,7,170,14,ES_AUTOHSCROLL
+    LTEXT           "Enter your domain here:",IDC_STATIC,15,17,78,10
+    EDITTEXT        IDC_EDIT2,98,41,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,127,41,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,157,41,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,188,41,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           ".",IDC_STATIC,119,45,8,8
+    CTEXT           ".",IDC_STATIC,149,45,8,8
+    CTEXT           ".",IDC_STATIC,179,45,8,8
+    EDITTEXT        IDC_EDIT6,98,56,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,127,56,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,157,56,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,188,56,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CTEXT           ".",IDC_STATIC,119,60,8,8
+    CTEXT           ".",IDC_STATIC,149,60,8,8
+    CTEXT           ".",IDC_STATIC,179,60,8,8
+    LTEXT           "From",IDC_STATIC,71,44,17,8
+    LTEXT           "To",IDC_STATIC,71,57,9,8
+    LTEXT           "Enter your IP ranges",IDC_STATIC,15,47,49,21
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,98,75,204,69
+    CTEXT           "Select additional domains for further analysis",IDC_STATIC,310,81,36,45
+    GROUPBOX        "Find more domains by PTR->",IDC_STATIC,7,30,347,119
+    GROUPBOX        "",IDC_STATIC,7,153,347,86
+    LTEXT           "Find more domains via shared hosting or domains shared by NS server",IDC_STATIC,15,166,72,66
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,98,167,204,67
+    CTEXT           "Select maximal number of displayed domains",IDC_STATIC,304,163,42,41
+    EDITTEXT        IDC_EDIT10,312,205,27,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,248,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,248,56,14
+    CONTROL         131,IDC_PIC1,"Static",SS_BITMAP,374,2,36,33,WS_EX_DLGMODALFRAME
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Idle.",IDC_STATUS1,117,250,95,8
+    PUSHBUTTON      "Button3",IDC_TIP,23,96,48,43,BS_BITMAP
+    CONTROL         "Select all",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,305,134,41,10
+    CONTROL         "Select all",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,305,224,41,10
+    PUSHBUTTON      "Exit",IDC_BUTTON3,7,248,50,14
+    PUSHBUTTON      "About",IDC_BUTTON4,61,248,50,14
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,293,7,61,15
+END
+
+IDD_TLD DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DNS Tool - TLD"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Select type of Top Level domains to search",IDC_STATIC,29,20,81,18
+    CONTROL         "Generic",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,17,45,10
+    CONTROL         "Europe",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,30,48,10
+    CONTROL         "Asia",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,17,46,10
+    CONTROL         "Americas",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,30,51,10
+    CONTROL         "Oceania",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,17,52,10
+    CONTROL         "Africa",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,242,30,57,10
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,30,53,267,105
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "Select All",IDC_BUTTON3,41,233,99,14
+    CTEXT           "Select domains for further analysis",IDC_STATIC,304,58,46,34
+    CONTROL         "Select all",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,305,98,44,10
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         131,IDC_PIC1,"Static",SS_BITMAP,159,258,36,33,WS_EX_DLGMODALFRAME
+    LTEXT           "Idle.",IDC_ST,31,165,140,8
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Button3",IDC_TIP,306,114,48,43,BS_BITMAP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,293,7,61,15
+END
+
+IDD_WEB DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WebCheck"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,70,20,275,126
+    CTEXT           "Test all TLD for open web services (port 80 or 443)",IDC_STATIC,14,24,51,48
+    CONTROL         "Select all",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,196,88,10
+    LTEXT           "Idle.",IDC_STA,187,150,142,8
+    CONTROL         131,IDC_PIC1,"Static",SS_BITMAP,17,196,36,33,WS_EX_DLGMODALFRAME
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "Button3",IDC_TIP,14,102,48,43,BS_BITMAP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,15,156,61,15
+END
+
+IDD_MX DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MX Check"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,70,20,275,126
+    CTEXT           "Test all fully qualified domain names for MX entries",IDC_STATIC,14,24,49,48
+    LTEXT           "",IDC_STA,187,150,142,8
+    CONTROL         131,IDC_PIC1,"Static",SS_BITMAP,19,226,36,33,WS_EX_DLGMODALFRAME
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "MX",IDC_STATIC,153,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "Button3",IDC_TIP,14,102,48,43,BS_BITMAP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,14,153,61,15
+END
+
+IDD_NS DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NS Check"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,70,20,275,126
+    CTEXT           "Test all fully qualified domain names for NS entries and XFR",IDC_STATIC,14,24,49,48
+    LTEXT           "",IDC_STA,187,150,142,8
+    CONTROL         131,IDC_PIC1,"Static",SS_BITMAP,32,201,36,33,WS_EX_DLGMODALFRAME
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "MX",IDC_STATIC,153,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "NS",IDC_STATIC,199,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      "Button3",IDC_TIP,14,102,48,43,BS_BITMAP
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,14,155,61,15
+END
+
+IDD_ARECS DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "A-Records"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "MX",IDC_STATIC,153,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "A-Records",IDC_STATIC,245,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "NS",IDC_STATIC,199,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         "1. Find subdomains by search engine",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,18,30,153,10
+    CONTROL         "2. Find subdomains via Dictionary query ",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,18,45,153,10
+    CONTROL         "3. Find subdomains via Brute Force ",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,18,60,153,10
+    COMBOBOX        IDC_COMBO1,181,58,77,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,267,57,77,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,267,43,77,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open dictionary",IDC_BUTTON3,181,43,77,12
+    LTEXT           "pages.",IDC_STATIC,219,31,28,8
+    EDITTEXT        IDC_EDIT1,181,28,34,12,ES_AUTOHSCROLL
+    GROUPBOX        "Input",IDC_STATIC,7,18,347,59
+    PUSHBUTTON      "Button3",IDC_TIP,14,102,48,43,BS_BITMAP
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,81,85,200,62
+    LTEXT           "Idle.",IDC_STA,27,150,319,8
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,18,163,61,15
+END
+
+IDD_CONFIG DIALOGEX 0, 0, 361, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DNS Config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "MX",IDC_STATIC,153,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "DNS Config",IDC_STATIC,291,0,45,14,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "NS",IDC_STATIC,199,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "A-Records",IDC_STATIC,245,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "Next ->",IDC_BUTTON1,302,164,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,164,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,164,52,14
+    CONTROL         "1.DNS servers have A records",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,26,210,10
+    CONTROL         "2.No CNAMEs for domain",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,36,210,10
+    CONTROL         "3.No NSs with CNAMEs",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,47,210,10
+    CONTROL         "4.Number of nameservers",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,57,210,10
+    CONTROL         "5.Number of mailservers",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,68,210,10
+    CONTROL         "6.All NS IPs public",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,79,210,10
+    CONTROL         "7.Reverse DNS entries for MX records",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,89,210,10
+    CONTROL         "8.Reverse DNS entries for NS records",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,53,100,210,10
+    CONTROL         "Select All",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,207,121,58,17,WS_EX_DLGMODALFRAME
+    LTEXT           "-",IDC_STATIC1,271,26,56,8
+    LTEXT           "-",IDC_STATIC2,271,37,56,8
+    LTEXT           "-",IDC_STATIC3,271,47,56,8
+    LTEXT           "-",IDC_STATIC4,271,58,56,8
+    LTEXT           "-",IDC_STATIC5,271,69,56,8
+    LTEXT           "-",IDC_STATIC6,271,80,56,8
+    LTEXT           "-",IDC_STATIC7,271,90,56,8
+    LTEXT           "-",IDC_STATIC8,271,101,56,8
+    GROUPBOX        "",IDC_STATIC,42,18,295,130
+    LTEXT           "Idle.",IDC_STATIC23,53,162,108,8
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,286,27,61,15
+END
+
+IDD_REPORT DIALOGEX 0, 0, 361, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Report"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDC_BUTTON1,302,101,52,14
+    DEFPUSHBUTTON   "Start",IDC_BUTTON2,239,101,56,14
+    PUSHBUTTON      "<- Back",IDC_BUTTON4,181,101,52,14
+    CONTROL         "Text (.txt)",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,147,44,71,16,WS_EX_DLGMODALFRAME
+    CONTROL         "HTML (.html)",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,147,62,71,16,WS_EX_DLGMODALFRAME
+    GROUPBOX        "Create report",IDC_STATIC,141,30,85,54
+    CTEXT           "Start",IDC_STATIC,15,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "TLD",IDC_STATIC,61,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "WebCheck",IDC_STATIC,107,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "MX",IDC_STATIC,153,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "DNS Config",IDC_STATIC,291,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "NS",IDC_STATIC,199,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "A-Records",IDC_STATIC,245,0,45,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,17,93,61,15
+END
+
+IDD_SERIAL DIALOGEX 0, 0, 156, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Serial code"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,44,50,14
+    LTEXT           "Please enter serial code",IDC_STATIC,10,10,97,8
+    EDITTEXT        IDC_EDIT1,7,22,40,14,ES_UPPERCASE
+    EDITTEXT        IDC_EDIT2,58,22,40,14,ES_UPPERCASE
+    EDITTEXT        IDC_EDIT3,109,22,40,14,ES_UPPERCASE
+    CTEXT           "-",IDC_STATIC,49,26,8,8
+    CTEXT           "-",IDC_STATIC,100,26,8,8
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,88,7,61,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "NetProtect AG"
+            VALUE "FileDescription", "DNS Tool"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DNS Tool.exe"
+            VALUE "LegalCopyright", "(c) NetProtect AG"
+            VALUE "OriginalFilename", "DNS Tool.exe"
+            VALUE "ProductName", "DNS Tool"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DNSTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 15
+        VERTGUIDE, 98
+        VERTGUIDE, 302
+        VERTGUIDE, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+        HORZGUIDE, 41
+        HORZGUIDE, 45
+        HORZGUIDE, 56
+        HORZGUIDE, 60
+    END
+
+    IDD_TLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 130
+        VERTGUIDE, 188
+        VERTGUIDE, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 17
+    END
+
+    IDD_WEB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 20
+    END
+
+    IDD_MX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 20
+    END
+
+    IDD_NS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 20
+    END
+
+    IDD_ARECS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 18
+        VERTGUIDE, 181
+        VERTGUIDE, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+        HORZGUIDE, 18
+        HORZGUIDE, 40
+        HORZGUIDE, 55
+        HORZGUIDE, 70
+    END
+
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        VERTGUIDE, 53
+        VERTGUIDE, 263
+        VERTGUIDE, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_SERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ARECS DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 18, 0
+0x4d5b, 0x7861, 0x6320, 0x6168, 0x6172, 0x7463, 0x7265, 0x3a73, 0x005d, 
+
+    IDC_COMBO1, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO2, 0x403, 13, 0
+0x6c41, 0x6870, 0x6261, 0x7465, 0x6369, 0x6c61, "\000" 
+    IDC_COMBO2, 0x403, 20, 0
+0x6c41, 0x6870, 0x6261, 0x202e, 0x2026, 0x754e, 0x656d, 0x6972, 0x6163, 
+0x006c, 
+    IDC_COMBO3, 0x403, 13, 0
+0x435b, 0x6f68, 0x736f, 0x2065, 0x534e, 0x5d3a, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About DNS Tool..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Switzerland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DES)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_SWISS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "res\\InfoGuard_Logo.bmp"
+#endif    // German (Switzerland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DNSTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
